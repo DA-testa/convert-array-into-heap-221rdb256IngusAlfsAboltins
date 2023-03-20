@@ -1,3 +1,5 @@
+import os
+
 def heapify(data, i, n, swaps):
     min_index = i
     left_child = 2 * i + 1
