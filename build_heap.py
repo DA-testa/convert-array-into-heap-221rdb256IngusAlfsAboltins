@@ -24,14 +24,18 @@ def build_heap(data):
 
 
 def main():
-    n = int(input())
+    n = 0
+    
+    if input() == "I"{
+        n = int(input())
+    }
+    
     data = list(map(int, input().split()))
     assert len(data) == n
     swaps = build_heap(data)
     print(len(swaps))
     for i, j in swaps:
         print(i, j)
-
 
 if __name__ == "__main__":
     main()
