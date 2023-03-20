@@ -26,9 +26,9 @@ def build_heap(data):
 def main():
     n = 0
     
-    if input() == "I"{
+    if input() == "I" :
         n = int(input())
-    }
+    
     
     data = list(map(int, input().split()))
     assert len(data) == n
