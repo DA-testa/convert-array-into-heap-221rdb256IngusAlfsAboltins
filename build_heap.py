@@ -33,7 +33,16 @@ def main():
         print(len(swaps))
         for i, j in swaps:
             print(i, j)
- 
+     elif input_type == "F":
+        file_name = input().strip()
+        with open(file_name, 'r') as f:
+            n = int(f.readline())
+            data = list(map(int, f.readline().split()))
+            assert len(data) == n
+            swaps = build_heap(data)
+            print(len(swaps))
+            for i, j in swaps:
+                print(i, j)
     
     
     
