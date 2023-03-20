@@ -24,19 +24,23 @@ def build_heap(data):
 
 
 def main():
+    text = input()
+    text =  text.replace("\\n", ' ').replace('\\r', ' ')
     n = 0
-    
-    if input() == "I" :
-        n = int(input())
-    
-    
-    data = list(map(int, input().split()))
-    assert len(data) == n
+    num = [];
+    if text[0] == "I" :
+        text = text.split()
+        [type,n, *num] = text   
+    data = list(map(int,num))
+    assert len(data) == int(n)
     swaps = build_heap(data)
     print(len(swaps))
     for i, j in swaps:
         print(i, j)
-
+ 
+    
+    
+    
 if __name__ == "__main__":
     main()
 
