@@ -20,15 +20,15 @@ def build_heap(data):
         heapify(data, i, n, swaps)
     return swaps
 def main():
-    input = input().strip()
-    if input == 'I':
+    text= input().strip()
+    if text == 'I':
         
         
         
         n = int(input())
         data = list(map(int, input().split()))
         assert len(data) == n
-    elif input == 'F':
+    elif text  == 'F':
         file_name = input().strip()
         file_path = os.path.join('tests', file_name)
         with open(file_path, 'r') as f:
